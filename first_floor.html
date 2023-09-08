@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Primo Piano</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Primo Piano</h1>
+  <h2>Proprietario: <span id="ownerName"></span></h2>
+  <div class="floor">
+    <div class="room living-room">Soggiorno</div>
+    <div class="room kitchen">Cucina</div>
+    <div class="room bathroom">Bagno</div>
+  </div>
+  <div class="controls">
+    <button onclick="toggleLight('living-room')">Accendi/Spegni Soggiorno</button>
+    <button onclick="toggleLight('kitchen')">Accendi/Spegni Cucina</button>
+    <button onclick="toggleLight('bathroom')">Accendi/Spegni Bagno</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.floor {
+  position: relative;
+  width: 800px; /* Adjust as needed */
+  height: 600px; /* Adjust as needed */
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+
+.room {
+  position: absolute;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  text-align: center;
+  line-height: 150px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+.living-room {
+  left: 100px;
+  top: 100px;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.kitchen {
+  left: 300px;
+  top: 100px;
+  background-color: rgba(0, 255, 0, 0.7);
+}
+
+.bathroom {
+  left: 500px;
+  top: 100px;
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+.bedroom {
+  left: 100px;
+  top: 300px;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.study {
+  left: 300px;
+  top: 300px;
+  background-color: rgba(0, 255, 0, 0.7);
+}
+
+.guest-room {
+  left: 500px;
+  top: 300px;
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+.room.room-on {
+  background-color: rgba(255, 255, 255, 0.9); /* Lighter background for room-on */
+  filter: brightness(1.2); /* Add filter for brightness */
+}
+.controls button {
+  transition: filter 0.3s ease;
+}
+
+.controls button.on {
+  filter: brightness(1.2); /* Add filter for brightness */
+}
+
